@@ -1,0 +1,151 @@
+@font-face {
+    font-family: determination-rus;
+    src: url(../fonts/determination-rus.ttf);
+  }
+
+@font-face {
+    font-family: comic-sans;
+    src: url(../fonts/comic-sans-ms.ttf);
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: determination-rus;
+}
+
+#title_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+#sans_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#talk_bubble_container {
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 180px;
+}
+
+#form_textarea {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+textarea {
+    width: 93%;
+    height: 150px;
+    margin: 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    border-radius: 0px;
+    background-color: black;
+    font-size: 16px;
+    resize: none;
+    color: white;
+    font-family: determination-rus;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: block;
+    float: left;
+}
+
+.send_button {
+    width: 6%;
+    height: 150px;
+    margin: 0;
+    margin-left: 1%;
+    display: block;
+    float: right;
+
+    box-sizing: border-box;
+    border: 5px solid white;
+    cursor: pointer;
+    appearance: none;
+    /* background-color: inherit; */
+    transition: transform .7s ease-in-out;
+    
+    background: url("../img/send_arrow.png") no-repeat;
+    background-size: 80% 25%;
+    background-position: center;
+    
+}
+
+#form_mic {
+    /* background-color: red; */
+    display: inline-block;
+    width: 100%;
+}
+
+.mic_button {
+    min-width: 120px;
+    min-height: 120px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+
+    cursor: pointer;
+    appearance: none;
+    transition: transform .7s ease-in-out;
+    background: url("../img/mic_white.png") no-repeat;
+    background-size: 80% 80%;
+    background-position: center;
+}
+
+.mic_button:hover {
+    border: 5px solid rgb(17, 17, 17);
+    border-radius: 50%;
+
+    
+    background: url("../img/mic_black.png") no-repeat;
+    background-color: white;
+    background-size: 80% 80%;
+    background-position: center;
+}
+
+
+.talk_bubble {
+    position: relative;
+    font-family: comic-sans;
+    letter-spacing: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    min-height: 100px;
+    max-height: 100px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+}
+
+.talk_bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 280px;
+    bottom: -24px;
+}
