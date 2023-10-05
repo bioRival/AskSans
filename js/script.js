@@ -181,8 +181,10 @@ async function joke_toriel() {
     await sleep(3000);
     speak_sans("В итоге, мне пора было уходить.");
     await sleep(3000);
-    speak_sans("Но женщина сказала, чтобы я приходил снова и я так и сделал.");
+    speak_sans("Но женщина сказала, чтобы я приходил снова");
     await sleep(4000);
+    speak_sans("и я так и сделал.");
+    await sleep(2500);
     speak_sans("Затем я пришел опять. И ещё раз. Это стало фишкой.");
     await sleep(3500);
     speak_sans("Однако, в один день, я заметил,");
