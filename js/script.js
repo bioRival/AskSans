@@ -15,9 +15,10 @@ Array.prototype.sample = function(){
 // Creating sleep function, cuz javascript has none -_-
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
+// MIC BUTTON - doesn't do much, just visual
 function mic_button_click() {
     const line = document.querySelector('.hr_white_line');
-    const form = document.querySelector('#textarea_container_inner');
+    const form = document.querySelector('.textarea_container_inner');
     const mic = document.getElementById("mic");
 
     if (IS_MIC_PRESSED) {
@@ -36,6 +37,7 @@ function mic_button_click() {
     
 }
 
+// Makes impossible for user to mess with "send button" and "mic button"
 function disable_ui(disable=true) {
     if (disable) {
         document.querySelector('.send_button').disabled = true;
@@ -47,6 +49,7 @@ function disable_ui(disable=true) {
     
 }
 
+// Makes Sans' text appear letter-by-letter with matching sound
 function appearChars(str, elem, timeBetween) {
     var voice_sans = new Audio('sound/voice_sans.mp3');
     voice_sans.load();
@@ -88,11 +91,21 @@ async function joke_no_friends() {
     disable_ui(false);
 }
 
+// Finisher gag, which appears when all jokes are told.
 async function joke_killer() {
     disable_ui();
 
     var MEGALOVANIA = new Audio('sound/MEGALOVANIA.mp3');
     MEGALOVANIA.load();
+    var battle_start = new Audio('sound/UT_Battle_Start.mp3');
+    battle_start.load();
+
+    // Elements of the page, that will be hidden / revealed later
+    const arena = document.querySelector('.arena');
+    const health_bar = document.querySelector('.health_bar');
+    const fake_buttons = document.querySelector('.fake_buttons_container');
+    const form = document.querySelector('.textarea_container_inner');
+    const mic = document.getElementById("mic");
 
     speak_sans("Эммм....");
     await sleep(3000);
@@ -117,12 +130,21 @@ async function joke_killer() {
     MEGALOVANIA.play();
     speak_sans("Т В О Я О Ч Е Р Е Д Ь У М Е Р Е Т Ь");
     await sleep(4000);
+
+    // Changing interface to match simulate the battle, gradually... dramatically
+    battle_start.play();
+    form.classList.add("remove_from_page");
+    mic.classList.add("remove_from_page");
+    arena.classList.remove("remove_from_page");
+
     speak_sans("");
     await sleep(3000);
+    health_bar.classList.remove("remove_from_page");
 
     document.querySelector("#sans_picture").src = "img/sans_moving.gif";
     speak_sans("Надеюсь, ты все еще помнишь как сражаться.");
     await sleep(4000);
+    fake_buttons.classList.remove("remove_from_page");
     speak_sans("Если нет");
     await sleep(1000);
     speak_sans("не думай, что я буду играть в поддавки");
@@ -130,9 +152,16 @@ async function joke_killer() {
     speak_sans("Начнем.");
     await sleep(2000);
     speak_sans("");
-    await sleep(2000);
+    await sleep(4000);
     MEGALOVANIA.pause();
-    await sleep(2000);
+    await sleep(1000);
+
+    // Changing interface back to normal
+    form.classList.remove("remove_from_page");
+    mic.classList.remove("remove_from_page");
+    fake_buttons.classList.add("remove_from_page");
+    health_bar.classList.add("remove_from_page");
+    arena.classList.add("remove_from_page");
 
     document.querySelector("#sans_picture").src = "img/sans.png";
     speak_sans("Хехе. Напугал тебя до мозга костей? А?");
@@ -320,6 +349,7 @@ async function joke_bad10() {
     disable_ui(false);
 }
 
+// List of function-jokes, removed one by one, once used
 const JOKE_LIST = [
     joke_no_friends, 
     joke_toriel,
@@ -335,11 +365,7 @@ const JOKE_LIST = [
     joke_bad10,
 ];
 
-
-
-
-
-
+// SEND BUTTON - this is where the magic happens
 // async needed for "await sleep" to work
 async function send_button_click() {
     const textarea = document.querySelector('textarea');

@@ -37,7 +37,7 @@ body {
     height: 180px;
 }
 
-#textarea_container_inner {
+.textarea_container_inner {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +62,10 @@ textarea {
     font-family: determination-rus;
     font-size: 30px;
     letter-spacing: 2px;
+}
+
+textarea::placeholder {
+    color: white;
 }
 
 .textarea_container {
@@ -104,6 +108,7 @@ textarea {
 #mic_container {
     /* background-color: red; */
     display: inline-block;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -141,7 +146,7 @@ textarea {
 }
 
 .mic_button_recording {
-    border: 5px solid white;
+    border: 30px solid rgb(0, 0, 0);
     border-radius: 50%;
 
     background-color: red;
@@ -217,6 +222,70 @@ textarea {
 .footer .row a i{
     font-size:2em;
     margin:0% 1%;
+}
+
+.arena {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+    background-image: url("../img/battle_arena.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.health_bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 24px;
+    background-image: url("../img/health_bar.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.fake_buttons_container {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 610px;
+}
+
+.fake_button {
+    border: none;
+    width: 150px;
+    height: 59px;
+    cursor: pointer;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.fake_button:hover {
+    filter: brightness(2);
+}
+
+.btn_fight {
+    background-image: url("../img/btn_fight.jpg");
+}
+
+.btn_act {
+    background-image: url("../img/btn_act.jpg");
+}
+
+.btn_item {
+    background-image: url("../img/btn_item.jpg");
+}
+
+.btn_mercy {
+    background-image: url("../img/btn_mercy.jpg");
+}
+
+.remove_from_page {
+    display: none;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
