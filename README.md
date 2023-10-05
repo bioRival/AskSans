@@ -52,23 +52,13 @@ in that he's about to start a combat.
 ## Установка
 Скопируй репозиторий, используя git и готово.
 ## Использование
-Just like in game, Sans has a matching sound and visual effect, when he talks.  
-Sans has pseudo AI, even though it wasn't part of a task, it just helps to showcase the design
-in all it's glory. Also it's fun.  
-Sans reacts differently if you write in text area:
-- "Привет" - (rus. hello) will make him do a whoopee-cushion gag.
-- "Как дела?" - (rus. what's up?) will make him throw a related pun.
-
-Any other input or empty field will make him pick a radom joke from his list and tell it.  
-When list is depleted he will follow up with the finisher gag, trying to trick the user
-in that he's about to start a combat.
-<br><br><br>
 Когда Санс разговаривает, голос и визуальные эффекты совпадают с теми, что были в оригинале.  
 У Санса есть псевдо ИИ, не смотря на то, что это не было частью задания, ИИ помогает показать
 дизайн во всей его красе. К тому же, это прикольно.  
 Санс реагирует иначе, если ты напишешь в текстовом поле:  
 * "Привет" - использует трюк с подушкой-пердушкой.
 * "Как дела?" - отвечает соответствующим каламбуром.
+
 При любом другом вводе или пустом поле, Санс выбирает случайную шутку из списка и рассказывает ее.  
 Когда лист исчерпан, Санс заканчивает выступление финишером, заставляя пользователя думать, что
 он будет вовлечен в сражение.
