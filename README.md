@@ -1,21 +1,21 @@
 # AskSans
 One-page frontend project, where you can talk to Sans from Undertale (not actual AI, mostly just a display) [in Russian]
-<br><br><br>
+<br><br>
 If you want to quickly browse the project, it's currently hosted in [here](https://biorival.github.io/), check it out.
-<br><br><br>
+<br><br>
 This project was a part of a frontend developer test for participation in a hackathon. Assignment goes like this:  
 Develop a webpage, which contains a cartoon character, microphone, text field for question prompt,
 text box for answer.  
 Webpage Elements:  
-* Character: put in the center of the screen
-* Microphone: put under the character. Mic must have 2 states - on/off
-* Text Field: put text field under the microphone. User may enter his question in text field.
+- Character: put in the center of the screen
+- Microphone: put under the character. Mic must have 2 states - on/off
+- Text Field: put text field under the microphone. User may enter his question in text field.
 User must use a button to submit his question
-* Answer Screen: make an additional text field for to display character's answer
+- Answer Screen: make an additional text field for to display character's answer
 <br><br>
 Technical requirements:  
-* HTML5, CSS3, JavaScript
-* Responsive Web Design for different screen resolutions
+- HTML5, CSS3, JavaScript
+- Responsive Web Design for different screen resolutions
 
 ## Installation
 Clone this repository using git and you are good to go
@@ -25,8 +25,9 @@ Just like in game, Sans has a matching sound and visual effect, when he talks.
 Sans has pseudo AI, even though it wasn't part of a task, it just helps to showcase the design
 in all it's glory. Also it's fun.  
 Sans reacts differently if you write in text area:
-* "Привет" - (rus. hello) will make him do a whoopee-cushion gag.
-* "Как дела?" - (rus. what's up?) will make him throw a related pun.
+- "Привет" - (rus. hello) will make him do a whoopee-cushion gag.
+- "Как дела?" - (rus. what's up?) will make him throw a related pun.
+
 Any other input or empty field will make him pick a radom joke from his list and tell it.  
 When list is depleted he will follow up with the finisher gag, trying to trick the user
 in that he's about to start a combat.
@@ -40,14 +41,14 @@ in that he's about to start a combat.
 Этот проект был частью теста фронтэнд разработчика для приглашения участия в хакатоне. Задание следующее:  
 Разработать веб-страницу, который будет содержать персонажа, микрофон, текстовое поле для ввода вопроса, текстовое поле с ответом.  
 Элементы веб-страницы:  
-* Персонаж: Разместить персонажа в центре экрана.
-* Микрофон: Разместить микрофон под персонажем.Микрофон должен иметь два состояния: включен и выключен.
-* Текстовое поле: Разместить текстовое поле под микрофоном. Посетитель может ввести свой вопрос в текстовое поле. Посетитель должен нажать на кнопку "Отправить" после ввода вопроса.
-* Экран с ответом персонажа: Создать дополнительный экран с полем для отображения ответа персонажа.
+- Персонаж: Разместить персонажа в центре экрана.
+- Микрофон: Разместить микрофон под персонажем.Микрофон должен иметь два состояния: включен и выключен.
+- Текстовое поле: Разместить текстовое поле под микрофоном. Посетитель может ввести свой вопрос в текстовое поле. Посетитель должен нажать на кнопку "Отправить" после ввода вопроса.
+- Экран с ответом персонажа: Создать дополнительный экран с полем для отображения ответа персонажа.
 <br><br>
 Технические требования:  
-* HTML5, CSS3, JavaScript.
-* Адаптивная верстка под различные разрешения экранов.
+- HTML5, CSS3, JavaScript.
+- Адаптивная верстка под различные разрешения экранов.
 ## Установка
 Скопируй репозиторий, используя git и готово.
 ## Использование
@@ -55,8 +56,9 @@ Just like in game, Sans has a matching sound and visual effect, when he talks.
 Sans has pseudo AI, even though it wasn't part of a task, it just helps to showcase the design
 in all it's glory. Also it's fun.  
 Sans reacts differently if you write in text area:
-* "Привет" - (rus. hello) will make him do a whoopee-cushion gag.
-* "Как дела?" - (rus. what's up?) will make him throw a related pun.
+- "Привет" - (rus. hello) will make him do a whoopee-cushion gag.
+- "Как дела?" - (rus. what's up?) will make him throw a related pun.
+
 Any other input or empty field will make him pick a radom joke from his list and tell it.  
 When list is depleted he will follow up with the finisher gag, trying to trick the user
 in that he's about to start a combat.
